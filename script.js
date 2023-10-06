@@ -9,14 +9,12 @@ prevPageButton.addEventListener('click', function() {
     if (currentPage > 1) {
       currentPage--;
       Search();
-      console.log("FOI PORRA")
     }
   });
 
 nextPageButton.addEventListener('click', function() {
     currentPage++;
     Search();
-    console.log("FOI PORRA")
 });
   
 formulario.addEventListener('submit', async (event) =>{
@@ -27,7 +25,6 @@ formulario.addEventListener('submit', async (event) =>{
 })
 
 function Search(){
-    console.log("FOI PORRA 2")
     const resultsContainer = document.getElementById('results');
     const searchTerm = searchInput.value;
     
